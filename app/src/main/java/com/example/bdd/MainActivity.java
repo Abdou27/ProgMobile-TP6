@@ -34,8 +34,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        AppDatabase db = Room.databaseBuilder(getApplicationContext(),
-                AppDatabase.class, "planetesDB").build();
+        AppDatabase db = AppDatabase.getDatabase(this);
 
         planeteDao = db.planeteDao();
 
