@@ -6,6 +6,8 @@ import androidx.room.PrimaryKey;
 
 @Entity
 public class Planete {
+    private static int uuid = 1;
+
     @PrimaryKey
     public int uid;
 
@@ -15,8 +17,9 @@ public class Planete {
     @ColumnInfo(name = "size")
     private Integer taille;
 
-    Planete(int uid, String nom, Integer taille){
-        this.uid = uid;
+    Planete(String nom, Integer taille){
+        this.uid = uuid;
+        uuid += 1;
         this.nom = nom;
         this.taille = taille;
     }

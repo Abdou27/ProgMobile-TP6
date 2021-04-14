@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".AddPlanetFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:padding="24dp"
+        style="?android:attr/buttonBarStyle"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/planet_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/planet_name"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/planet_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/planet_size"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/add_planet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:drawableLeft="@drawable/ic_add"
+            android:drawableTint="@color/material_on_background_emphasis_high_type"
+            android:text="@string/add_planet"
+            android:textColor="@color/material_on_background_emphasis_high_type"
+            style="?android:attr/buttonBarButtonStyle" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
