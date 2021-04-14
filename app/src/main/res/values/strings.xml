@@ -1,3 +1,14 @@
 <resources>
-    <string name="app_name">BDD</string>
+    <string name="app_name">Planets DB</string>
+    <string name="mercury">Mercury</string>
+    <string name="venus">Venus</string>
+    <string name="earth">Earth</string>
+    <string name="mars">Mars</string>
+    <string name="jupiter">Jupiter</string>
+    <string name="saturn">Saturn</string>
+    <string name="uranus">Uranus</string>
+    <string name="neptune">Neptune</string>
+    <string name="pluto">Pluto</string>
+    <string name="name">Name</string>
+    <string name="size">Size</string>
 </resources>
